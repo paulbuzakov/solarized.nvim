@@ -166,10 +166,10 @@ theme.loadEditor = function ()
     --Set transparent background
     if vim.g.solarized_disable_background == true then
 		editor.Normal =				{ fg = solarized.fg, bg = solarized.none } -- normal text and background color
-		editor.SignColumn =			{ fg = solarized.fg, bg = solarized.none }
+		editor.SignColumn =			{ fg = solarized.comments, bg = solarized.none }
     else
 		editor.Normal =				{ fg = solarized.fg, bg = solarized.bg } -- normal text and background color
-		editor.SignColumn =			{ fg = solarized.fg, bg = solarized.bg }
+		editor.SignColumn =			{ fg = solarized.comments, bg = solarized.bg }
     end
 
     -- Remove window split borders
